@@ -8,14 +8,7 @@
     </encoder>
   </appender>
 
-  <appender name="TICKS" class="ch.qos.logback.core.ConsoleAppender">
-    <encoder>
-      <Pattern>%mdc{.location}: %m%n</Pattern>
-    </encoder>
-    <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
-      <level>INFO</level>
-    </filter>
-  </appender>
+  
 
   <root level="INFO">
     <appender-ref ref="CONSOLE"/>
