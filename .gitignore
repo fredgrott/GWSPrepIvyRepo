@@ -1,0 +1,5 @@
+bin/*
+build/*
+dist/*
+gen/*
+local.properties

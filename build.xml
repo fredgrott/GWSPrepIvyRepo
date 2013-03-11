@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Mar 6, 2013 7:03:07 PM                                                        
+
+     GWSPrepIvyRepo    
+     project to create an ivy repo locally
+                   
+     fredgrott                                                                
+     ====================================================================== -->
+<project name="GWSPrepIvyRepo" default="default"  basedir="."
+          xmlns:oja="jwaresoftware.antxtras" 
+         xmlns:emit="jwaresoftware.log4ant">
+    <description>
+            project to create an ivy repo locally
+    </description>
+
+    <!-- Load in Ant-Contrib to give us access to some very useful tasks! -->
+    <!-- the .jar file is located in the tools directory -->
+    <taskdef resource="net/sf/antcontrib/antlib.xml">
+        <classpath>
+            <pathelement location="${basedir}/lib/antlibs/ant-contrib-1.0b3.jar"/>
+        </classpath>
+    </taskdef>
+
+    <!-- load shell environment -->
+    <property environment="ENV" />
+    <!-- set ant build script version, antversionnumber.major.minor syntax-->
+    <property name="ant.script.version" value="184.1.1" />
+
+    <!-- Location of Log4Ant antlib and thirdparty files,
+         note in log4ant example they missuse dirname poiting to 
+         dir with file which will not produce the expected result -->
+      <path id="jware.path">
+            <fileset dir="${dasedir}lib/antlibs/dep">
+                <include name="*/lib/*.jar"/>
+            </fileset>
+        <fileset dir="${basedir}/lib/antlibs">
+             <include name="jw-log4ant.jar"/>
+         </fileset>
+    <pathelement 
+      location="${basedir}/lib/etc"/>
+  </path>
+
+  <!-- Test for Ant Version Delete this task and all instances of overwrite='no' if you can't upgrade to latest-->
+    <fail message="All features of the build script require Ant version 1.8.4 or greater. Please upgrade to the latest version or remove all instances of 'overwrite=no' (and this fail task) from the build script to continue">
+        <condition>
+            <not>
+                <antversion atleast="1.8.4"/>
+            </not>
+        </condition>
+    </fail>
+
+  <target name="check-antxtras" unless="INITED"
+    description="Load AntXtras and Log4Ant antlibs into Ant">
+ 
+    <taskdef uri="jwaresoftware.antxtras"
+         resource="org/jwaresoftware/antxtras/install/antlib.xml"
+         classpathref="jware.path"
+         loaderref="jware.classloader"/>
+ 
+    <taskdef uri="jwaresoftware.log4ant"
+         resource="org/jwaresoftware/log4ant/install/antlib.xml"
+         loaderref="jware.classloader"/>
+ 
+    <oja:vendorinfo name="antxtras"/>
+    <oja:show message="AntXtras: ${antxtras.build.label}"/>
+ 
+    <emit:libcheck/>
+    <emit:show message="${log4ant.label}"/> 
+    <emit:show message="${slf4j.label}"/>
+    <emit:show message="${slf4j-impl.label}"/>
+ 
+    <property name="INITED" value="yes"/>
+  </target>
+
+       <target name="-init">
+
+      </target>
+
+      <target name="-clean">
+
+      </target>
+	
+	<target name="main">
+		
+	</target>
+
+        <target name="build">
+
+         </target>
+ 
+      <target name="deploy">
+
+
+     </target>
+
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="default" depends="depends" description="project to create an ivy repo locally">
+        
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="depends">
+    </target>
+
+</project>
