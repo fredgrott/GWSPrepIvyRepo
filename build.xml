@@ -27,13 +27,13 @@
     <!-- set ant build script version, antversionnumber.major.minor syntax-->
     <property name="ant.script.version" value="184.1.1" />
 	
-	<path id="ivy.lib.path">
+	<path id="myivy.lib.path">
 	        <fileset dir="${basedir}/lib/antlibs" includes="ivy-2.3.0.jar"/>
 	</path>
 	<taskdef resource="org/apache/ivy/ant/antlib.xml"
-	             uri="antlib:org.apache.ivy.ant" classpathref="ivy.lib.path"/>
-    <taskdef name="resolve" classname="org.apache.ivy.ant.IvyResolve" classpathref="ivy.lib.path"/>
-	<taskdef name="publish" classname="org.apache.ivy.ant.IvyPublish" classpathref="ivy.lib.path"/>
+	             uri="antlib:org.apache.ivy.ant" classpathref="myivy.lib.path"/>
+    <taskdef name="resolve" classname="org.apache.ivy.ant.IvyResolve" classpathref="myivy.lib.path"/>
+	<taskdef name="publish" classname="org.apache.ivy.ant.IvyPublish" classpathref="myivy.lib.path"/>
 
     <!-- Location of Log4Ant antlib and thirdparty files,
          note in log4ant example they missuse dirname poiting to 
@@ -71,7 +71,9 @@
          resource="org/jwaresoftware/log4ant/install/antlib.xml"
          loaderref="jware.classloader"/>
 	
-	
+	<!-- Wraps errors up to output and my logback.xml is set to 
+	     use mdc to print out the target and task during ticks so 
+	     we use less ant macros to wrap the tasks inside targets -->
 	<presetdef name="wrap">
 	   <oja:protect>
 	      <oja:iferror capturethrown="last.error">
