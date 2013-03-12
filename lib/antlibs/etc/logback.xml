@@ -7,7 +7,14 @@
       <pattern>[%d{ISO8601}] [%-5p] %c - %mdc{.location}: %m%n%ex{3}</pattern>
     </encoder>
   </appender>
-
+  <appender name="TICKS" class="ch.qos.logback.core.ConsoleAppender">
+  <layout class="ch.qos.logback.classic.PatternLayout">
+    <Pattern>%mdc{.project }{.location}{.target}{.task}: %m%n</Pattern>
+  </layout>
+  <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+    <level>INFO</level>
+  </filter>
+</appender>
   
 
   <root level="INFO">
