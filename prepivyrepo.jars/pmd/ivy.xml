@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+   Licensed to the Apache Software Foundation (ASF) under one
+   or more contributor license agreements.  See the NOTICE file
+   distributed with this work for additional information
+   regarding copyright ownership.  The ASF licenses this file
+   to you under the Apache License, Version 2.0 (the
+   "License"); you may not use this file except in compliance
+   with the License.  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing,
+   software distributed under the License is distributed on an
+   "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+   KIND, either express or implied.  See the License for the
+   specific language governing permissions and limitations
+   under the License.    
+-->
+<ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
+    <info
+        organisation="net.sourceforge.pmd"
+        module="pmd"
+        status="release"
+        revision="5.0.2"
+        publication="031313">
+         <license name="BSD License" url="http://pmd.sourceforge.net/pmd-5.0.1/license.html"/>
+        <ivyauthor name="Fred Grott, GrottWorkShop" url="http://about.me/fredrott"/>
+        <description homepage="http://pmd.sourceforge.net/">
+        PMD is a source code analyzer. It finds unused variables, empty catch blocks, unnecessary 
+        object creation, and so forth.
+        </description>
+	</info>
+	<configurations>
+        <conf name="runtime" description="runtime"/>
+         <conf name="compile" description="for compiling"/>
+         <conf name="aptfactory" description="for annotations, aop, etc"/>
+         <conf name="javadoc" description="for javadoc"/>
+         <conf name="sources" description="sources"/>
+         <conf name="anttask" description="ant task library"/>
+         <conf name="gradle" description="gradle plugins"/>
+         <conf name="aspectjrt" description="aop"/>
+         <conf name="aspectjweaver" description="asepctj weaver"/>
+         <conf name="aspectjtools" description="aspectjtools"/>
+         <conf name="ejc" description-"eclipse java compiler"/>
+      </configurations>
+    <publications >
+           <artifact name="asm-3.2" type="jar" ext="jar" conf="anttask"/>
+           <artifact name="javacc-4.1" type="jar" ext="jar" conf="anttask"/>
+           <artifact name="jacxen-1.1.1" type="jar" ext="jar" conf="anttask"/>
+           <artifact name="junit-4.4" type="jar" ext="jar" conf="anttask"/>
+           <artifact name="pmd-5.0.2" type="jar" ext="jar" conf="anttask"/>
+    </publications>
+</ivy-module>
