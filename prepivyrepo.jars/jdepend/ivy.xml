@@ -24,7 +24,7 @@
         module="jdepend"
         status="release"
         revision="2.9.1"
-        publication="031313">
+        >
         <license name="BSD License" url="http://en.wikipedia.org/wiki/BSD_licenses"/>
         <ivyauthor name="Fred Grott, GrottWorkShop" url="http://about.me/fredrott"/>
         <description homepage="http://clarkware.com/software/JDepend.html">
@@ -44,10 +44,10 @@
          <conf name="aspectjrt" description="aop"/>
          <conf name="aspectjweaver" description="asepctj weaver"/>
          <conf name="aspectjtools" description="aspectjtools"/>
-         <conf name="ejc" description-"eclipse java compiler"/>
+         <conf name="ejc" description="eclipse java compiler"/>
          <conf name="jdepend" description="jdepend"/>
       </configurations>
     <publications >
-            <artifact name="jdepend-2.9.1" type="jar" ext="jar" conf="anttask; jdepend"/>
+            <artifact name="jdepend-2.9.1" type="jar" ext="jar" conf="anttask, jdepend"/>
     </publications>
 </ivy-module>

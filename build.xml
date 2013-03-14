@@ -80,7 +80,7 @@
 	         <emit:show messageid="E.something.failed" level="error">
 	            <include thrown="last.error"/>
 	         </emit:show>
-	         <unassign reference="last.error"/>
+	         <oja:unassign reference="last.error"/>
 	      </oja:iferror>
 	   </oja:protect>
 	</presetdef>  
@@ -115,8 +115,59 @@
 	      target: deploy
 	     ================================= -->
     <target name="deploy">
-    	<wrap>
+    	<!-- resolve task puls ivy file info into cache so that we re-use that 
+    	     as special $ivy.* ant vars that than are used to 
+    	     populate any not specified but needed ivy file fields
+    	     to be published in published task.
     	     
+    	     Ivy auto setsup the publication field with their own 
+    	     now var which defaults to yyyyMMddHHmmss -->
+    	<wrap>
+    		<!-- checkstyle -->
+    		<resolve 
+    		                    file="${basedir}/prepivyrepo.jars/checkstyle/ivy.xml"
+    		                     revision="5.6.0"/>
+    		        <publish 
+    		           pubrevision="5.6.0" status="release"
+    		           resolver="local" overwrite="true">
+    		        <artifacts pattern="${basedir}/prepivyrepo.jars/checkstyle/[artifact].[ext]"/>
+    		        </publish>
+    	     <!-- classycle -->
+    		<resolve
+    		       file="${basedir}/prepivyrepo.jars/classycle/ivy.xml"
+    		       revision="1.4.1"/>
+    		    <publish
+    		      pubrevision="1.4.1" status="release"
+    		      resolver="local" overwrite="true">
+    		    <artifacts pattern="${basedir}/prepivyrepo.jars/classycle/[artifact].[ext]"/>
+    		    </publish>
+    		<!--javancss -->
+    		<resolve
+    		     file="${basedir}/prepivyrepo.jars/javancss/ivy.xml"
+    		     revision="32.53"/>
+    		<publish
+    		   pubrevision="32.53" status="release"
+    		   resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/javancss/[artifact].[ext]"/>
+    			</publish>
+    		<!-- jdepend -->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/jdepend/ivy.xml"
+    		   revision="2.9.1"/>
+    		<publish
+    		  pubrevision="2.9.1" status="release"
+    		 resolver="local" overwrite="true">
+    			<artifacts pattern="${basedir}/prepivyrepo.jars/jdepend/[artifact].[ext]"/>
+    			</publish>
+    		<!-- pmd -->
+    		<resolve
+    			file="${basedir}/prepivyrepo.jars/pmd/ivy.xml"
+    			revision="5.0.2"/>
+    			<publish
+    			pubrevision="5.0.2" status="release"
+    			resolver="local" overwrite="true">
+    			<artifacts pattern="${basedir}/prepivyrepo.jars/pmd/[artifact].[ext]"/>
+    			</publish>
     	  </wrap>
 
    </target>

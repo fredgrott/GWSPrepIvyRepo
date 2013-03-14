@@ -21,10 +21,9 @@
        xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
     <info
         organisation="com.puppycrawl"
-        module="checkdstyle"
+        module="checkstyle"
         status="release"
-        revision="5.6"
-        publication="031313">
+        revision="5.6.0">
         <license name="GNU LGPL" url="http://checkstyle.sourceforge.net/license.html"/>
         <ivyauthor name="Fred Grott, GrottWorkShop" url="http://about.me/fredrott"/>
         <description homepage="http://checkstyle.sourceforge.net/">
@@ -49,9 +48,9 @@
          <conf name="aspectjrt" description="aop"/>
          <conf name="aspectjweaver" description="asepctj weaver"/>
          <conf name="aspectjtools" description="aspectjtools"/>
-         <conf name="ejc" description-"eclipse java compiler"/>
+         <conf name="ejc" description="eclipse java compiler"/>
       </configurations>
     <publications >
-           <artifact name="checkstyle-5.6" type="jar" ext="jar" conf="anttask"/>
+           <artifact name="checkstyle-5.6-all" type="jar" ext="jar" conf="anttask"/>
     </publications>
 </ivy-module>

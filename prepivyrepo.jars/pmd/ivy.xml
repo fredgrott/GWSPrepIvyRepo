@@ -24,7 +24,7 @@
         module="pmd"
         status="release"
         revision="5.0.2"
-        publication="031313">
+        >
          <license name="BSD License" url="http://pmd.sourceforge.net/pmd-5.0.1/license.html"/>
         <ivyauthor name="Fred Grott, GrottWorkShop" url="http://about.me/fredrott"/>
         <description homepage="http://pmd.sourceforge.net/">
@@ -43,12 +43,12 @@
          <conf name="aspectjrt" description="aop"/>
          <conf name="aspectjweaver" description="asepctj weaver"/>
          <conf name="aspectjtools" description="aspectjtools"/>
-         <conf name="ejc" description-"eclipse java compiler"/>
+         <conf name="ejc" description="eclipse java compiler"/>
       </configurations>
     <publications >
            <artifact name="asm-3.2" type="jar" ext="jar" conf="anttask"/>
            <artifact name="javacc-4.1" type="jar" ext="jar" conf="anttask"/>
-           <artifact name="jacxen-1.1.1" type="jar" ext="jar" conf="anttask"/>
+           <artifact name="jaxen-1.1.1" type="jar" ext="jar" conf="anttask"/>
            <artifact name="junit-4.4" type="jar" ext="jar" conf="anttask"/>
            <artifact name="pmd-5.0.2" type="jar" ext="jar" conf="anttask"/>
     </publications>

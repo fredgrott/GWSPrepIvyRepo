@@ -20,21 +20,17 @@
 <ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
     <info
-        organisation="javancss"
-        module="javancss"
+        organisation="com.jayway"
+        module="robotium-solo"
         status="release"
-        revision="32.53"
-        >
-          <license name="GNU General Public License" url="http://www.gnu.org/licenses/gpl-2.0.html"/>
+        revision="4.0">
+        <license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0"/>
         <ivyauthor name="Fred Grott, GrottWorkShop" url="http://about.me/fredrott"/>
-        <description homepage="http://www.kclee.de/clemens/java/javancss/">
-     Ever wondered how many lines of code or how many classes there are in  the Sun JDK? 
-     Curious about the size of your own projects - or do you want to keep track of your 
-     work-progress. That's what JavaNCSS is for.
-
-    JavaNCSS is a simple command line utility which measures two standard source code 
-    metrics for the Java programming language. The metrics are collected globally, for each class 
-    and/or for each function.
+        <description homepage="http://code.google.com/p/robotium/">
+      Robotium is a test framework created to make it easy to write powerful and robust automatic 
+      black-box test cases for Android applications. With the support of Robotium, 
+      test case developers can write function, system and acceptance test scenarios, 
+      spanning multiple Android activities.
         </description>
 	</info>
 	<configurations>
@@ -51,10 +47,8 @@
          <conf name="ejc" description="eclipse java compiler"/>
       </configurations>
     <publications >
-            <artifact name="ccl" type="jar" ext="jar" conf="anttask"/>
-            <artifact name="javacc" type="jar" ext="jar" conf="anttask"/>
-            <artifact name="javancss" type="jar" ext="jar" conf="anttask"/>
-            <artifact name="jhbasic" type="jar" ext="jar" conf="anttask"/>
-            <artifact name="javancss2ant" type="jar" ext="jar" conf="anttask"/>
+           <artifact name="robotium-solo-4.0" type="jar" ext="jar" conf="compile"/>
+           <artifact name="robotium-solo-4.0-sources" type="sources" ext="jar" conf="sources"/>
+           <artifact name="robotium-solo-4.0-javadoc" type="javadoc" ext="jar" conf="javadoc"/>
     </publications>
 </ivy-module>
