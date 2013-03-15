@@ -168,6 +168,22 @@
     			resolver="local" overwrite="true">
     			<artifacts pattern="${basedir}/prepivyrepo.jars/pmd/[artifact].[ext]"/>
     			</publish>
+    		<!-- androidannotations -->
+    		<resolve 
+    		   file="${basedir}/prepivyrepo.jars/androidannotations/ivy.xml"
+    		   revision="2.7.1"/>
+    		 <publish
+    		   pubrevision="2.7.1" status="release"
+    		   resolver="local" overwrite="true">
+    		 	<artifacts pattern="${basedir}/prepivyrepo.jars/androidannotations/[artifact].[ext]"/>
+    		 	</publish>
+    		<!--android binding modules -->
+    		
+    		
+    		
+    		
+    		<!-- repreport-->
+    		<!-- <repreport /> -->
     	  </wrap>
 
    </target>
