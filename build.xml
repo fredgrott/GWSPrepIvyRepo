@@ -178,12 +178,215 @@
     		 	<artifacts pattern="${basedir}/prepivyrepo.jars/androidannotations/[artifact].[ext]"/>
     		 	</publish>
     		<!--android binding modules -->
-    		
-    		
-    		
-    		
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/androidbinding/androidbinding/ivy.xml"
+    		   revision="0.6"/>
+    		<publish
+    		   pubrevision="0.6" status="release"
+    		   resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androdbinding/androidbinding/[artifact].[ext]"/>
+    			</publish>
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/androidbinding/androidbindingant/ivy.xml"
+    		   revision="0.6"/>
+    		<publish
+    		  pubrevision="0.6" status="release"
+    		  resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androidbinding/androidbindingant/[artifact].[ext]"/>
+    			</publish>
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/androidbindijng/androidbindingjs/ivy.xml"
+    		   revision="1.0"/>
+    		<publish
+    		  pubrevision="1.0" status="release"
+    		  resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androidbinding/androidbindingjs/[artifact].[ext]"/>
+    			</publish>
+    		<!-- androidjunit4 modules -->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/androidjunit4/androidjunit3dbunit/ivy.xml"
+    		   revision="0.1"/>
+    		<publish
+    		   pubrevision="0.1" status="release"
+    		   resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androidjunit4/androidjunit3dbunit/[artifact].[ext]"/>
+    			</publish>
+    		<resolve
+    		   file="${basedir}/prepivyreppo.jars/androidjunit4/androidjunit3extension/ivy.xml"
+    		   revision="0.1"/>
+    		<publish
+    		   pubrevision="0.1" status="release"
+    		   resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androidjunit4/androidjunit3extension/[artifact].[ext]"/>
+    		</publish>
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/androidjunit4/androidjunit3extensionsupportv4/ivy.xml"
+    		   revision="0.1"/>
+    		<publish
+    		 pubrevision="0.1" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androidjunit4/androidjunit4extensionsuppportv4/[artifact].[ext]"/>
+    			</publish>
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/androidjunit4/androidjunit4/ivy.xml"
+    		   revision="0.3"/>
+    		<publish
+    		  pubrevision="0.3" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androidjunit4/androidjunit4/[artifact].[ext]"/>
+    			</publish>
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/androidjunit4/androidjunit4extensionsupportv4/ivy.xml"
+    		   revision="0.1"/>
+    		<publish
+    		  pubrevision="0.1" status="release"
+    		  resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androidjunit4/androidjunit4extensionsupportv4/[artifact].[ext]"/>
+    			</publish>
+    		<!-- androidquery -->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/androidquery/ivy.xml"
+    		   revision="0.25.5"/>
+    		<publish
+    		  pubrevision="0.25.5" status="release"
+    		 resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androidquery/[artifact].[ext]"/>
+    			</publish>
+    		<!-- aspectj -->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/aspectj/ivy.xml"
+    		  revision="1.7.2"/>
+    		<publish
+    		  pubrevision="1.7.2" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/aspectj/[artifact].[ext]"/>
+    			</publish>
+    			
+    		<!-- dexmaker -->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/dexmaker/ivy.xml"
+    		   revision="1.0"/>
+    		<publish
+    		   pubrevision="1.0" status="release"
+    		 resolver="local" overwrite="true">
+    			<artifacts pattern="${basedir}/prepivyrepo.jars/dexmaker/[artifact].[ext]"/>
+    			</publish>
+    		<!-- eclipseecj -->
+    		<resolve
+    		  file="${basedir}/prepivyrepo.jars/eclipseecj/ivy.xml"
+    		  revision="4.2.2"/>
+    		<publish
+    		   pubrevision="4.2.2" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/eclipseecj/[artifact].[ext]"/>
+    			</publish>
+    		<!-- festandroid -->
+    		<resolve
+    		  file="${basedir}/prepivyrepo.jars/festandroid/ivy.xml"
+    		revision="1.0.1"/>
+    		<publish
+    		 pubrevision="1.0.1" status="release"
+    		resolver="local" overwrite="true">
+    		<artiacts pattern="${basedir}/prepivyrepo/jars/festandroid/[artifact].[ext]"/>
+    			</publish>
+    		<!-- guice-->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/guice/ivy.xml"
+    		    revision="3.0"/>
+    		<publish
+    		  pubrevision="3.0" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/guice/[artifact].[ext]"/>
+    			</publish>
+    		<!-- hamcrest -->
+    		<resolve
+    		  file="${basedir}/prepivyrepo.jars/hamcrest-core-springsource/ivy.xml"
+    		  revision="1.0"/>
+    		<publish
+    		  pubrevision="1.0" status="release"
+    		 resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/hamcrest-core-springsource/[artifact].[ext]"/>
+    			</publish>
+    		<!-- mockitojunit3 -->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/mockito/mockito-junit3/ivy.xml"
+    		   revision="1.9.5"/>
+    		<publish
+    		  pubrevision="1.9.5" status="release"
+    		 resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/mockito/mockito-junit3/[artifact].[ext]"/>
+    			</publish>
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/mockito/mockito-junit4/ivy.xml"
+    		 revision="1.9.5"/>
+    		<publish
+    		  pubrevision="1.9.5" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/mockito/mockito-junit4/[artifact].[ext]"/>
+    			</publish>
+    	  <!-- roboguice -->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/roboguice/ivy.xml"
+    		   revision="3.0"/>
+    		<publish
+    		  pubrevision="3.0" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/roboguice/[artifact].[ext]"/>
+    			</publish>
+    		<!-- robotium -->
+    		<resolve
+    		  file="${basedir}/prepivyrepo.jars/robotium/ivy.xml"
+    		revision="4.0"/>
+    		<publish
+    		   pubrevision="4.0" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/robotium/[artifact].[ext]"/>
+    			</publish>
+    		<!-- transfuse -->
+    		<resolve
+    		  file="${basedir}/prepivyrepo.jars/transfuse?ivy.xml"
+    		revision="0.1.2"/>
+    		<publish
+    		  pubrevision="0.1.2" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/transfuse/[artifact].[ext]"/>
+    			</publish>
+    		<!-- wikitext -->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/wikitext/ivy.xml"
+    		revision="1.8.0"/>
+    		<publish
+    		  pubrevision="1.8.0" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/wikitext/[artifact].[ext]"/>
+    			</publish>
+    		<!-- zutubiandroidant -->
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/zutubiandroidant/ivy.xml"
+    		   revision="0.7.13"/>
+    		<publish
+    		   pubrevision="0.7.13" status="release"
+    		  resolver="local" overwrite="true">
+    			<artifacts pattern="${basedir}/prepivyrepo.jars/zutubiandroidant/[artifact].[ext]"/>
+    			</publish>
+    		<resolve
+    		   file="${basedir}/prepivyrepo.jars/tape/ivy.xml"
+    		  revision="1.1.0"/>
+    		<publish
+    		   pubrevision="1.1.0" status="release"
+    		  resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/tape/[artifact].[ext]"/>
+    			</publish>
+    		<resolve
+    		  file="${basedir}/prepivyrepo.jars/seismic/ivy.xml"
+    		  revision="1.0.0"/>
+    		<publish
+    		  pubrevision="1.0.0" staytus="release"
+    		  resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/seismic/[artifact].[ext]"/>
+    			</publish>
     		<!-- repreport-->
-    		<!-- <repreport /> -->
+    		<repreport /> 
     	  </wrap>
 
    </target>
