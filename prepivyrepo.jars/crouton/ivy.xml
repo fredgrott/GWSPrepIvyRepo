@@ -20,14 +20,14 @@
 <ivy-module version="2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="http://ant.apache.org/ivy/schemas/ivy.xsd">
     <info
-        organisation="org.eclipse.mylyn"
-        module="wikitext"
+        organisation="de.keyboardsurfer"
+        module="crouton"
         status="release"
-        revision="1.8.0">
-        <license name="EPL" url="http://opensource.org/licenses/EPL-1.0"/>
+        revision="1.7">
+         <license name="Apache License" url="http://www.apache.org/licenses/LICENSE-2.0"/>
         <ivyauthor name="Fred Grott, GrottWorkShop" url="http://about.me/fredrott"/>
-        <description homepage="http://www.eclipse.org/mylyn/">
-      WikiText has parsers for MediaWiki, Textile, Confluence, TracWiki and TWiki markup, and can be extended to support other languages. 
+        <description homepage="https://github.com/keyboardsurfer/Crouton">
+       Context sensitive notifications for Android
         </description>
 	</info>
 	<configurations>
@@ -44,11 +44,8 @@
          <conf name="ejc" description="eclipse java compiler"/>
       </configurations>
     <publications >
-           <artifact name="org.eclipse.mylyn.wikitext.confluence.core_1.8.0.I20130208-1532" type="jar" ext="jar" conf="anttask"/>
-           <artifact name="org.eclipse.mylyn.wikitext.core_1.8.0.I20130208-1532" type="jar" ext="jar" conf="anttask"/>
-           <artifact name="org.eclipse.mylyn.wikitext.mediawiki.core_1.8.0.I20130208-1532" type="jar" ext="jar" conf="anttask"/>
-           <artifact name="org.eclipse.mylyn.wikitext.textile.core_1.8.0.I20130208-1532" type="jar" ext="jar" conf="anttask"/>
-           <artifact name="org.eclipse.mylyn.wikitext.tracwiki.core_1.8.0.I20130208-1532" type="jar" ext="jar" conf="anttask"/>
-           <artifact name="org.eclipse.mylyn.wikitext.twiki.core_1.8.0.I20130208-1532" type="jar" ext="jar" conf="anttask"/>
+           <artifact name="crouton-1.7" type="jar" ext="jar" conf="compile"/>
+           <artifact name="crouton-1.7-javadoc" type="javadoc" ext="jar" conf="javadoc"/>
+           <artifact name="crouton-1.7-sources" type="sources" ext="jar" conf="sources"/>
     </publications>
 </ivy-module>

@@ -27,7 +27,7 @@
          <license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
         <ivyauthor name="Fred Grott, GrottWorkShop" url="http://about.me/fredrott"/>
         <description homepage="http://code.google.com/p/mockito/">
-      Mockito is a mocking framework that tastes really good. It lets you write beautiful tests with clean & simple API. Mockito doesn't give you hangover 
+      Mockito is a mocking framework that tastes really good. It lets you write beautiful tests with clean and simple API. Mockito doesn't give you hangover 
       because the tests are very readable and they produce clean verification errors.
         </description>
 	</info>

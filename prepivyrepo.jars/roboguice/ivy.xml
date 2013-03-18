@@ -23,7 +23,7 @@
         organisation="roboguice"
         module="roboguice"
         status="release"
-        revision="3.0b">
+        revision="3.0">
         <license name="Apache 2.0 License" url="http://www.apache.org/licenses/LICENSE-2.0"/>
         <ivyauthor name="Fred Grott, GrottWorkShop" url="http://about.me/fredrott"/>
         <description homepage="https://github.com/roboguice/roboguice">
@@ -44,8 +44,8 @@
          <conf name="ejc" description="eclipse java compiler"/>
       </configurations>
     <publications >
-           <artifact name="robogguice-3.0b-experimental" type="jar" ext="jar" conf="compile"/>
-           <artifact name="robogguice-3.0b-experimental-javadoc" type="javadoc" ext="jar" conf="javadoc"/>
-           <artifact name="robogguice-3.0b-experimental-sources" type="sources" ext="jar" conf="sources"/>
+           <artifact name="roboguice-3.0b-experimental" type="jar" ext="jar" conf="compile"/>
+           <artifact name="roboguice-3.0b-experimental-javadoc" type="javadoc" ext="jar" conf="javadoc"/>
+           <artifact name="roboguice-3.0b-experimental-sources" type="sources" ext="jar" conf="sources"/>
     </publications>
 </ivy-module>
