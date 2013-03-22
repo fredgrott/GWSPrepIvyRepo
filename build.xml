@@ -466,7 +466,42 @@
     		resolver="local" overwrite="true">
     			<artifacts pattern="${basedir}/prepivyrepo.jars/crouton/[artifact].[ext]"/>
     			</publish>
-    		
+    		<!-- groovy -->
+    		<resolve
+    		 file="${basedir}/prepivyrepo.jars/groovy/ivy.xml"
+    		revision="2.1.2"/>
+    		<publish
+    		pubrevision="2.1.2" status="release"
+    		resolver="local" overwrite="true">
+    			<artifacts pattern="${basedir}/prepivyrepo.jars/groovy/[artifact].[ext]"/>
+    			</publish>
+    		<!-- birtanttask -->
+    		<resolve
+    		 file="${basedir}/prepivyrepo.jars/birtanttask/ivy.xml"
+    		revision="1.0"/>
+    		<publish
+    		pubrevision="1.0" status="release"
+    		resolver="local" overwrite="true">
+    			<artifacts pattern="${basedir}/prepivyrepo.jars/birtanttask/[artifact].[ext]"/>
+    			</publish>
+    		<!-- birt -->
+    		<resolve
+    		file="${basedir}/prepivyrepo.jars/birt/ivy.xml"
+    		revision="4.2.1"/>
+    		<publish
+    		pubrevision="4.2.1" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/birt/[artifact].[ext]"/>
+    			</publish>
+    		<!-- ant-->
+    		<resolve
+    		file="${basedir}/prepivyrepo.jars/ant/ivy.xml"
+    		revision="1.8.4"/>
+	        <publish
+    		pubrevision="1.8.4" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/ant/[artifact].[ext]"/>
+	        	</publish>
     	  </wrap>
 
    </target>
