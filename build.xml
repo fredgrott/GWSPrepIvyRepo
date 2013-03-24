@@ -502,6 +502,25 @@
     		resolver="local" overwrite="true">
     		<artifacts pattern="${basedir}/prepivyrepo.jars/ant/[artifact].[ext]"/>
 	        	</publish>
+    		<!-- jython -->
+    		<resolve
+    		file="${basedir}/prepivyrepo.jars/jython/ivy.xml"
+    		revision="2.7.1"/>
+    		<publish
+    		pubrevision="2.7.1" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/jython/[artifact].[ext]"/>
+    			</publish>
+    		<!-- androidgradle -->
+    		<resolve
+    		file="${basedir}/prepivyrepo.jars/androidgradle/ivy.xml"
+    		revision="0.3"/>
+    		<publish
+    		pubrevision="0.3" status="release"
+    		resolver="local" overwrite="true">
+    		<artifacts pattern="${basedir}/prepivyrepo.jars/androidgradle/[artifact].[ext]"/>
+    			</publish>
+    		
     	  </wrap>
 
    </target>
