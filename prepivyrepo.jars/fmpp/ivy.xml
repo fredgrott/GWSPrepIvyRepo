@@ -45,11 +45,11 @@
          <conf name="doclet" description="doclet"/>
       </configurations>
       <publications >
-            <artifact name="bsh" type="jar" ext="jar" conf="doclet"/>
-            <artifact name="fmpp" type="jar" ext="jar" conf="doclet"/>
-            <artifact name="freemarker" type="jar" ext="jar" conf="doclet"/>
-            <artifact name="oro" type="jar" ext="jar" conf="doclet"/>
-            <artifact name="resolver" type="jar" ext="jar" conf="doclet"/>
+            <artifact name="bsh" type="jar" ext="jar" conf="anttask"/>
+            <artifact name="fmpp" type="jar" ext="jar" conf="anttask"/>
+            <artifact name="freemarker" type="jar" ext="jar" conf="anttask"/>
+            <artifact name="oro" type="jar" ext="jar" conf="anttask"/>
+            <artifact name="resolver" type="jar" ext="jar" conf="anttask"/>
             
     </publications>
 </ivy-module>
