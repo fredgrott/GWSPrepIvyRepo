@@ -520,7 +520,33 @@
     		resolver="local" overwrite="true">
     		<artifacts pattern="${basedir}/prepivyrepo.jars/androidgradle/[artifact].[ext]"/>
     			</publish>
-    		
+    		<!-- jdiff -->
+    		<resolve
+    		    file="${basedir}/prepivyrepo.jars/jdiff/ivy.xml"
+         revision="1.0.9"/>
+    		<publish
+    		    pubrevision="1.0.9" status="release"
+    		    resolver="local" overwrite="true">
+    		    <artifacts pattern="${basedir}/prepivyrepo.jars/jdiff/[artifact].[ext]"/>
+    		</publish>
+    		<!-- fmpp -->
+    		<resolve
+    		    file="${basedir}/prepivyrepo.jars/fmpp/ivy.xml"
+    		    revision="0.9.14"/>
+    		<publish
+    		    pubrevision="0.9.14" status="release"
+    		    resolver="local" overwrite="true">
+    		    <artifacts pattern="${basedir}/prepivyrepo.jars/fmpp/[artifact].[ext]"/>
+    		</publish>
+    		<!--  yuml -->
+    		<resolve
+    		    file="${basedir}/prepivyrepo.jars/yuml/ivy.xml"
+    		    revision="3.0.02"/>
+    		<publish
+    		    pubrevision="3.0.02" status="release"
+    		    resolver="local" overwrite="true">
+    		    <artifacts pattern="${basedir}/prepivyrepo.jars/yuml/[artifact].[ext]"/>
+    		</publish>
     	  </wrap>
 
    </target>
