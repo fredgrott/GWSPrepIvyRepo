@@ -547,6 +547,15 @@
     		    resolver="local" overwrite="true">
     		    <artifacts pattern="${basedir}/prepivyrepo.jars/yuml/[artifact].[ext]"/>
     		</publish>
+    		<!-- dagger -->
+    		<resolve
+    		    file="${basedir}/prepivyrepo.jars/dagger/ivy.xml"
+    		    revision="0.9.1"/>
+    		<publish
+    		    pubrevision="0.9.1" status="release"
+    		    resolver="local" overwrite="true">
+    		    <artifacts pattern="${basedir}/prepivyrepo.jars/dagger/[artifact].[ext]"/>
+    		</publish>
     	  </wrap>
 
    </target>
